@@ -18,6 +18,9 @@ var game = cc.Layer.extend({
     var size = cc.winSize;
 
     var backgroundSprite = cc.Sprite.create(res.background_png);
+    backgroundSprite.setPosition(cc.p(size.height / 2, size.width / 2));
+    backgroundSprite.setScaleX(0.9);
+    backgroundSprite.setScaleY(0.8);
     this.addChild(backgroundSprite);
 
     /////////////Schedule Update/////////////////////////
